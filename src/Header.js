@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -14,7 +15,7 @@ function Header() {
             color="inherit"
             aria-label="menu"
           ></IconButton>
-          <Typography variant="h6">Place something here</Typography>
+          <Link to="/">HOME</Link>
         </Toolbar>
       </AppBar>
     </div>

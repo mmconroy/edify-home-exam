@@ -1,38 +1,21 @@
 ## Edify - React Developer Take Home Test
 
-### Assignment
+### Directory
 
-Build a single page application using React
+This directory is a single page React application that allows the user to browse and search a set of employees and their profiles.
 
-### Requirements
+### Installation
 
-The application should utilize a public API and build:
-● List view
-● Detail view
-● On-page or API level filtering for the list view
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Implement a toggleable fake-delay mechanism that would simulate a network delay/ slowdown
-on the site.
-● The toggle function can be anything from a UI component to URL params.
-● Preferably, the delay can be configurable, but if not, a 1sec to 2secs delay is reasonable.
+## Available Scripts
 
-### Deliverables
+In the project directory, you can run:
 
-Github repo containing:
-● All source code
-● Readme with instructions to run the application
-● Optional: video demonstrating application in use
+### `npm start` to run the application
 
-### Bonus
+This will run the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-● Unit testing via jest or mocha/chai with mocked requests for the API
-● End-to-end testing via cypress
-● Store favorites in local storage
-○ Tab/page/slideout panel to view favorites
-● Typescript
-
-### Instagram Example
-
-● List view of popular posts
-● Filter posts by hashtag
-● Open a modal with a specific post
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.

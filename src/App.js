@@ -18,12 +18,14 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Route exact path="/">
-          <List users={users} />
-        </Route>
-        <Route path="/users/:id">
-          <ItemDetail users={users} />
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <List users={users} />
+          </Route>
+          <Route path="/users/:id">
+            <ItemDetail users={users} />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

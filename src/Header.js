@@ -10,12 +10,13 @@ function Header() {
     <div>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-          ></IconButton>
-          <Link to="/">HOME</Link>
+          <IconButton edge="end" color="inherit" aria-label="menu"></IconButton>
+          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+            HOME
+          </Link>
+          <Typography style={{ position: "fixed", top: "18px", left: "75%" }}>
+            Directory
+          </Typography>
         </Toolbar>
       </AppBar>
     </div>

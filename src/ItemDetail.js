@@ -1,9 +1,9 @@
 import React from "react";
 
-function ItemDetail() {
+function ItemDetail(users) {
   return (
     <div>
-      <H1>THIS WILL BE OUR ITEM DETAILS PAGE</H1>
+      <h1>THIS WILL BE OUR ITEM DETAILS PAGE</h1>
     </div>
   );
 }

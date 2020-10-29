@@ -13,6 +13,7 @@ function ItemDetail() {
     justifyContent: "center",
     alignItems: "center",
     margin: "2rem",
+    height: "auto",
   };
   useEffect(() => {
     setUser({ data: null });
@@ -26,19 +27,26 @@ function ItemDetail() {
       });
   }, [url]);
 
+  setTimeout(() => {
+    console.log("go_to_sleep");
+  }, 5000);
+
   if (user.data) {
     content = (
       <div style={containerStyle}>
-        <div>
-          <img
-            className="detail-image"
-            src={user.data.avatar}
-            alt="Avatar"
-          ></img>
-          <h1 className="detail-title">
-            {user.data.firstName} {user.data.lastName}
-          </h1>
-        </div>
+        <img
+          src={user.data.avatar}
+          alt="Avatar"
+          style={{ border: "1px solid black" }}
+        ></img>
+        <h1>
+          {user.data.firstName} {user.data.lastName}
+        </h1>
+        <h3>{user.data.company}</h3>
+        <p>
+          {user.data.city}, {user.data.state}
+        </p>
+        <h3>{user.data.job}</h3>
         <h4>{user.data.email}</h4>
       </div>
     );

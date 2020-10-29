@@ -10,11 +10,14 @@ import ItemDetail from "./ItemDetail";
 function App() {
   const [users, setUsers] = useState([]);
   const [query, setQuery] = useState("");
+  const [text, setText] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch("https://5f9a10979d94640016f705ed.mockapi.io/api/vi/users")
       .then((response) => response.json())
       .then((json) => setUsers(json));
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
@@ -32,10 +35,10 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Search getQuery={(q) => setQuery(q)} />
+        <Search getQuery={(q) => setQuery(q)} text={text} setText={setText} />
         <Switch>
           <Route exact path="/">
-            <List users={users} />
+            <List users={users} isLoading={isLoading} />
           </Route>
           <Route path="/users/:id">
             <ItemDetail users={users} />

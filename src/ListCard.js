@@ -22,12 +22,6 @@ function ListCard({ users }) {
               <Typography gutterBottom variant="h5" component="h2">
                 {users.firstName} {users.lastName}
               </Typography>
-              <Typography variant="body1" color="textSecondary" component="p">
-                {users.company}
-              </Typography>
-              <Typography variant="body1" color="textSecondary" component="p">
-                {users.jobTitle}
-              </Typography>
               <img src={users.avatar} alt="Small Avatar"></img>
             </CardContent>
           </CardActions>

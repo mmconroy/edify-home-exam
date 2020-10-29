@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Search.css";
 
-function Search({ getQuery }) {
-  const [text, setText] = useState("");
-
+function Search({ getQuery, text, setText }) {
   const onChange = (q) => {
     setText(q);
     getQuery(q);

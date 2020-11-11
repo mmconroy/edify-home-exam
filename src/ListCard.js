@@ -11,9 +11,13 @@ function ListCard({ users }) {
     <div>
       <Card
         style={{
-          margin: "2rem",
+          padding: "1rem",
+          margin: "1rem",
           height: "auto",
-          width: "300px",
+          minWidth: "300px",
+          maxWidth: "400px",
+          justifySelf: "center",
+          alignSelf: "center",
         }}
       >
         <CardActionArea>
@@ -31,6 +35,8 @@ function ListCard({ users }) {
               color: "black",
               textDecoration: "none",
               fontSize: "1rem",
+              border: "1px solid black",
+              padding: "6px",
             }}
           >
             More Info

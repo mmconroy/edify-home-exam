@@ -35,9 +35,13 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Search getQuery={(q) => setQuery(q)} text={text} setText={setText} />
         <Switch>
           <Route exact path="/">
+            <Search
+              getQuery={(q) => setQuery(q)}
+              text={text}
+              setText={setText}
+            />
             <List users={users} isLoading={isLoading} />
           </Route>
           <Route path="/users/:id">

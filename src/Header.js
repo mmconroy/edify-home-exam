@@ -1,24 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Header() {
   return (
-    <div>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="end" color="inherit" aria-label="menu"></IconButton>
-          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-            HOME
-          </Link>
-          <Typography style={{ position: "fixed", top: "18px", left: "75%" }}>
-            Directory
-          </Typography>
-        </Toolbar>
-      </AppBar>
+    <div style={{ marginBottom: "3rem" }}>
+      <Container>
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          expand="lg"
+          variant="dark"
+          bg="dark"
+          fixed="top"
+        >
+          <Navbar.Brand href="/">Home</Navbar.Brand>
+        </Navbar>
+      </Container>
     </div>
   );
 }

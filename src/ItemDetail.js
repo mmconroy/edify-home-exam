@@ -27,10 +27,6 @@ function ItemDetail() {
       });
   }, [url]);
 
-  setTimeout(() => {
-    console.log("go_to_sleep");
-  }, 5000);
-
   if (user.data) {
     content = (
       <div style={containerStyle}>

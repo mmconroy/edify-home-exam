@@ -1,6 +1,6 @@
-## Edify - React Developer Take Home Test
+## React Directory App
 
-### Directory
+### Instructions
 
 This directory is a single page React application that allows the user to browse and search a set of employees and their profiles.
 

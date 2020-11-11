@@ -10,7 +10,6 @@ function Header() {
         <Navbar
           collapseOnSelect
           expand="lg"
-          expand="lg"
           variant="dark"
           bg="dark"
           fixed="top"

@@ -1,4 +1,4 @@
-## React Directory App
+# React Directory App
 
 ### Instructions
 

@@ -12,7 +12,7 @@ function ItemDetail() {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    margin: "2rem",
+    margin: "6rem",
     height: "auto",
   };
   useEffect(() => {

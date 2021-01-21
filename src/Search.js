@@ -14,7 +14,7 @@ function Search({ getQuery, text, setText }) {
           className="input-field"
           placeholder="Search Directory"
           value={text}
-          onChange={(event) => onChange(event.target.value)}
+          onChange={(event) => onChange(event.target.value)} //As we type in the search bar, this is updating the state of the text value
           autoFocus
         />
       </form>
